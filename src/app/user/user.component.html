@@ -1,1 +1,14 @@
-<p>from user component</p>
+<!-- Databinding -->
+<!-- String Interpolation-->
+<p>{{name}}</p>
+
+<!-- Property Binding -->
+<button [disabled]="isEnabled">Add User</button>
+<br/>
+
+<!-- Event Binding -->
+<input type="text" (input) ="onInputChanged($event)" />
+<br/>
+
+<!-- Two-way Binding -->
+<input type="text" [(ngModel)]="name" />

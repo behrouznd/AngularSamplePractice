@@ -14,5 +14,12 @@ import { Component } from '@angular/core';
 })
 
 export class UserComponent {
+  name: string = "Behrouz";
+  isEnabled: boolean = false;
 
+  public onInputChanged(e: Event) {
+    console.log(e);
+
+    this.name = (<HTMLInputElement>e.target).value;
+  }
 }
