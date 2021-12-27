@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { Sample1Component } from './Practice01/sample1.component';
 import { UserComponent } from './user/user.component';
 import { UsersComponent } from './users/users.component'
 
@@ -10,7 +11,8 @@ import { UsersComponent } from './users/users.component'
   declarations: [
     AppComponent,
     UserComponent,
-    UsersComponent
+    UsersComponent,
+    Sample1Component
   ],
   imports: [
     BrowserModule,
