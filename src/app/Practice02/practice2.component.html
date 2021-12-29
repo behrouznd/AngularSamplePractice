@@ -1,0 +1,21 @@
+<p [class]="classes">Practice 2</p>
+<br />
+
+<p *ngFor="let user of users; let i =index">{{i + ": "+ user}}</p>
+<br />
+
+<input type="button" (click)="addNewUser()" value="Add User" />
+<p *ngFor="let user1 of userObj; trackBy: trackByFunc ">{{user1.id + ": "+ user1.name}}</p>
+<br />
+
+<p *ngIf="isCorrect; else elseCondition">ngIf true</p>
+<ng-template #elseCondition>
+  else Condition !
+</ng-template>
+
+<div [ngSwitch]="switchProperty">
+  <p *ngSwitchCase="'a'">Case a</p>
+  <p *ngSwitchCase="'b'">Case b</p>
+  <p *ngSwitchCase="'c'">Case c</p>
+
+</div>
