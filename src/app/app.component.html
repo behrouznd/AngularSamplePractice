@@ -1,7 +1,10 @@
 <app-user *ngIf="false"></app-user>
 <app-users *ngIf="false"></app-users>
-<div class="app-user"></div>
+<div class="app-user" *ngIf="false"></div>
 
-<app-sample1></app-sample1>
-<app-practice2></app-practice2>
-
+<app-sample1 *ngIf="false"></app-sample1>
+<app-practice2 *ngIf="false"></app-practice2>
+<div *ngIf="false">
+  <app-star *ngFor="let rating of ratings" [rating]=rating (starClicked)="onStarClicked($event)"></app-star>
+</div>
+<app-decoupling></app-decoupling>

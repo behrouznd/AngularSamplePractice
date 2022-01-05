@@ -3,9 +3,8 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\assets",
-    "\\src\\environments"
+    "\\src\\app\\adduser",
+    "\\src\\app\\usertable"
   ],
-  "SelectedNode": "\\src\\app\\Practice02",
   "PreviewInSolutionExplorer": false
 }
