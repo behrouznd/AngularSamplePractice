@@ -2,9 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app",
-    "\\src\\app\\adduser",
-    "\\src\\app\\usertable"
+    "\\src\\app"
   ],
   "PreviewInSolutionExplorer": false
 }

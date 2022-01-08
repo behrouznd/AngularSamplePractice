@@ -1,4 +1,4 @@
 <div class="container-fluid">
-  <app-adduser></app-adduser>
-  <app-usertable></app-usertable>
+  <app-adduser (onAddUserClicked)="userAdded($event)"></app-adduser>
+  <app-usertable [usersTable]="users"></app-usertable>
 </div>

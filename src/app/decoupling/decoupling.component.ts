@@ -7,12 +7,14 @@ import { user } from '../app-interface';
   styleUrls: ['./decoupling.component.css']
 })
 export class DecouplingComponent implements OnInit {
-
+  users: user[] = [];
   
   constructor() { }
 
   ngOnInit(): void {
   }
 
-
+  public userAdded(users: user[]) {
+    this.users = users;
+  }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { user } from '../app-interface';
 
 @Component({
@@ -7,7 +7,7 @@ import { user } from '../app-interface';
   styleUrls: ['./usertable.component.css']
 })
 export class UsertableComponent implements OnInit {
-  users: user[] = [];
+  @Input() usersTable: user[] = [];
 
   constructor() { }
 
