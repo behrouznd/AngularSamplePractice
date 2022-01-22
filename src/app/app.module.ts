@@ -10,7 +10,8 @@ import { UsersComponent } from './users/users.component';
 import { StarComponent } from './star/star.component';
 import { DecouplingComponent } from './decoupling/decoupling.component';
 import { AdduserComponent } from './adduser/adduser.component';
-import { UsertableComponent } from './usertable/usertable.component'
+import { UsertableComponent } from './usertable/usertable.component';
+import { Child1Component } from './child1/child1.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { UsertableComponent } from './usertable/usertable.component'
     StarComponent,
     DecouplingComponent,
     AdduserComponent,
-    UsertableComponent
+    UsertableComponent,
+    Child1Component
   ],
   imports: [
     BrowserModule,

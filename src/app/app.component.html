@@ -8,3 +8,6 @@
   <app-star *ngFor="let rating of ratings" [rating]=rating (starClicked)="onStarClicked($event)"></app-star>
 </div>
 <app-decoupling></app-decoupling>
+<app-child1 #counter></app-child1>
+<button (click)="increamentMain()">+</button>
+<button (click)="decreamentMain()">-</button>
