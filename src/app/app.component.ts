@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'FirstApp';
 
   ratings: number[] = [3.4, 5, 1.5, 2.2];
+  condition: boolean = false;
 
   public onStarClicked(rating: number) {
     console.log(`The rating ${rating} is clicked`);

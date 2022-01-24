@@ -8,6 +8,17 @@
   <app-star *ngFor="let rating of ratings" [rating]=rating (starClicked)="onStarClicked($event)"></app-star>
 </div>
 <app-decoupling></app-decoupling>
-<app-child1 #counter></app-child1>
+<app-child1 #counter><h2 #headercontent>Data from AppComponent</h2></app-child1>
 <button (click)="increamentMain()">+</button>
 <button (click)="decreamentMain()">-</button>
+<br />
+<p >Direction Sample</p>
+<p bold>Direction Sample</p>
+
+
+<p *ngIf="condition ; else unset">
+  Erste Block
+</p>
+<ng-template #unset>
+  <p>Else Block</p>
+</ng-template>

@@ -1,5 +1,7 @@
 <p #username>{{name}} </p>
 <p>{{username.textContent}}</p>
 <input type="text" [(ngModel)]="name" />
+<button (click)="change()" >change</button>
 <br/>
 <p>{{counter}}</p>
+<ng-content></ng-content>

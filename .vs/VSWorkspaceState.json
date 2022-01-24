@@ -2,10 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app",
-    "\\src\\app\\user",
-    "\\src\\assets"
+    "\\src\\app"
   ],
-  "SelectedNode": "\\src\\app\\app.component.ts",
+  "SelectedNode": "\\src\\app\\bold.directive.ts",
   "PreviewInSolutionExplorer": false
 }
