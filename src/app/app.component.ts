@@ -1,10 +1,12 @@
 import { Component, ViewChild } from '@angular/core';
 import { Child1Component } from './child1/child1.component';
+import { DataService } from './data.service';
+import { LogService } from './log.service';
  
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'] 
 })
 export class AppComponent {
   title = 'FirstApp';
@@ -32,5 +34,17 @@ export class AppComponent {
 
   toggle() {
     this.condition = !this.condition;
+  }
+
+  constructor(private dataService: DataService) {}
+
+  items: string[] = [];
+  name: string = "";
+  addItem(name: string) {
+    this.dataService.addData(name);
+  }
+
+  ngOnInit() {
+    this.items = this.dataService.getData();
   }
 }

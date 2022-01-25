@@ -14,6 +14,9 @@ import { UsertableComponent } from './usertable/usertable.component';
 import { Child1Component } from './child1/child1.component'
 import { BoldDirection } from './bold.directive';
 import { WhileDirective } from './while.directive';
+import { DataComponent } from './data.component';
+import { DataService } from './data.service';
+import { LogService } from './log.service';
 
 @NgModule({
   declarations: [
@@ -28,13 +31,14 @@ import { WhileDirective } from './while.directive';
     UsertableComponent,
     Child1Component,
     BoldDirection,
-    WhileDirective
+    WhileDirective,
+    DataComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [DataService, LogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
