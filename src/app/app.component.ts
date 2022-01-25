@@ -29,4 +29,8 @@ export class AppComponent {
 
     this.counterComponent?.decreament();
   }
+
+  toggle() {
+    this.condition = !this.condition;
+  }
 }

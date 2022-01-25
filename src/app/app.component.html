@@ -12,7 +12,7 @@
 <button (click)="increamentMain()">+</button>
 <button (click)="decreamentMain()">-</button>
 <br />
-<p >Direction Sample</p>
+<p>Direction Sample</p>
 <p bold>Direction Sample</p>
 
 
@@ -22,3 +22,13 @@
 <ng-template #unset>
   <p>Else Block</p>
 </ng-template>
+
+
+
+<p *while="condition">
+  first section
+</p>
+<p *while="!condition">
+  seconf section
+</p>
+<button (click)="toggle()">Toggle</button>

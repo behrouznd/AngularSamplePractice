@@ -13,6 +13,7 @@ import { AdduserComponent } from './adduser/adduser.component';
 import { UsertableComponent } from './usertable/usertable.component';
 import { Child1Component } from './child1/child1.component'
 import { BoldDirection } from './bold.directive';
+import { WhileDirective } from './while.directive';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BoldDirection } from './bold.directive';
     AdduserComponent,
     UsertableComponent,
     Child1Component,
-    BoldDirection
+    BoldDirection,
+    WhileDirective
   ],
   imports: [
     BrowserModule,
