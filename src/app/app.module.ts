@@ -17,6 +17,7 @@ import { WhileDirective } from './while.directive';
 import { DataComponent } from './data.component';
 import { DataService } from './data.service';
 import { LogService } from './log.service';
+import { FormsampleComponent } from './formsample/formsample.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { LogService } from './log.service';
     Child1Component,
     BoldDirection,
     WhileDirective,
-    DataComponent
+    DataComponent,
+    FormsampleComponent
   ],
   imports: [
     BrowserModule,
