@@ -22,6 +22,7 @@ import { LogService } from './log.service';
 import { FormsampleComponent } from './formsample/formsample.component';
 import { FormsreactiveComponent } from './formsreactive/formsreactive.component';
 import { UserserviceComponent } from './userservice/userservice.component';
+import { SenddataComponent } from './senddata/senddata.component';
  
 
 @NgModule({
@@ -41,7 +42,8 @@ import { UserserviceComponent } from './userservice/userservice.component';
     DataComponent,
     FormsampleComponent,
     FormsreactiveComponent,
-    UserserviceComponent 
+    UserserviceComponent,
+    SenddataComponent 
   ],
   imports: [
     BrowserModule,
