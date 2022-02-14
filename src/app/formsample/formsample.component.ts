@@ -16,7 +16,8 @@ export class FormsampleComponent implements OnInit {
  
   phone: Phone = new Phone("", 0, "");
 
-  phones: Phone[] = [];  companies: string[] = ["Apple", "Huawei", "Xiaomi", "Samsung", "LG", "Motorola","Alcatel"];
+  phones: Phone[] = [];
+  companies: string[] = ["Apple", "Huawei", "Xiaomi", "Samsung", "LG", "Motorola","Alcatel"];
 
   constructor() { }
 

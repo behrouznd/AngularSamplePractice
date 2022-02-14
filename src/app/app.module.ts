@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 import { Sample1Component } from './Practice01/sample1.component';
@@ -18,6 +20,9 @@ import { DataComponent } from './data.component';
 import { DataService } from './data.service';
 import { LogService } from './log.service';
 import { FormsampleComponent } from './formsample/formsample.component';
+import { FormsreactiveComponent } from './formsreactive/formsreactive.component';
+import { UserserviceComponent } from './userservice/userservice.component';
+ 
 
 @NgModule({
   declarations: [
@@ -34,11 +39,15 @@ import { FormsampleComponent } from './formsample/formsample.component';
     BoldDirection,
     WhileDirective,
     DataComponent,
-    FormsampleComponent
+    FormsampleComponent,
+    FormsreactiveComponent,
+    UserserviceComponent 
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [DataService, LogService],
   bootstrap: [AppComponent]
