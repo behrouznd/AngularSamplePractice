@@ -9,6 +9,9 @@ import { Subscription } from 'rxjs';
 })
 export class ItemComponent implements OnInit {
 
+  mydate= new Date(1986, 1, 14);
+  mynumber: number = 3.1415;
+
   id: number | undefined;
   product: any;
   price: any;

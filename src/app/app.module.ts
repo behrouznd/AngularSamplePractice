@@ -26,7 +26,8 @@ import { SenddataComponent } from './senddata/senddata.component';
 import { PostuserComponent } from './postuser/postuser.component';
 import { Routes, RouterModule} from '@angular/router';
 import { ItemComponent } from './item/item.component';
- 
+import { Formatpipe } from './format.pipe';
+
 //define Routes
 const appRoutes: Routes = [
   { path: '', component: PostuserComponent },
@@ -57,7 +58,8 @@ const appRoutes: Routes = [
     UserserviceComponent,
     SenddataComponent,
     PostuserComponent,
-    ItemComponent 
+    ItemComponent,
+    Formatpipe
   ],
   imports: [
     BrowserModule,
