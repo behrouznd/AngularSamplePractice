@@ -23,7 +23,19 @@ import { FormsampleComponent } from './formsample/formsample.component';
 import { FormsreactiveComponent } from './formsreactive/formsreactive.component';
 import { UserserviceComponent } from './userservice/userservice.component';
 import { SenddataComponent } from './senddata/senddata.component';
+import { PostuserComponent } from './postuser/postuser.component';
+import { Routes, RouterModule} from '@angular/router';
+import { ItemComponent } from './item/item.component';
  
+//define Routes
+const appRoutes: Routes = [
+  { path: '', component: PostuserComponent },
+  { path: 'about', component: StarComponent },
+  { path: 'contact', redirectTo: '/about', pathMatch: 'full' },
+  { path: 'item/:id', component: ItemComponent },
+  { path: '**', component: Sample1Component }
+];
+
 
 @NgModule({
   declarations: [
@@ -43,13 +55,16 @@ import { SenddataComponent } from './senddata/senddata.component';
     FormsampleComponent,
     FormsreactiveComponent,
     UserserviceComponent,
-    SenddataComponent 
+    SenddataComponent,
+    PostuserComponent,
+    ItemComponent 
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [DataService, LogService],
   bootstrap: [AppComponent]

@@ -50,4 +50,26 @@
 
 
 <!--<app-userservice></app-userservice>-->
-<app-senddata></app-senddata>
+
+<!--<app-senddata></app-senddata>-->
+
+<!--<app-postuser></app-postuser>-->
+
+<div>
+  <ul class="nav">
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+      <a routerLink="">Home</a>
+    </li>
+    <li routerLinkActive="active">
+      <a routerLink="/about">About</a>
+    </li>
+    <li routerLinkActive="active">
+      <a [routerLink]="['item', '6']" [queryParams]="{'product':'samsung','price':400}" >item 6</a>
+    </li>
+    <li routerLinkActive="active">
+      <a [routerLink]="['item', '8']" [queryParams]="{'product':'phone', 'price': 200}">item 8</a>
+    </li>
+  </ul>
+
+  <router-outlet></router-outlet>
+</div>

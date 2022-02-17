@@ -1,0 +1,14 @@
+.active {
+  color: red;
+}
+.nav {
+  clear: both;
+}
+
+a {
+  float: left;
+}
+
+.active a {
+  color: red;
+}

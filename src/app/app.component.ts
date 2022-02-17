@@ -47,4 +47,5 @@ export class AppComponent {
   ngOnInit() {
     this.items = this.dataService.getData();
   }
+
 }

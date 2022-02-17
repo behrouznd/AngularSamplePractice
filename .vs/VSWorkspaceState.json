@@ -3,8 +3,9 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\item",
     "\\src\\assets"
   ],
-  "SelectedNode": "\\package.json",
+  "SelectedNode": "\\src\\app\\item\\item.component.ts",
   "PreviewInSolutionExplorer": false
 }
